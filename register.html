@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="register.css">
+</head>
+<body>
+	<div id="main">
+		<div id="registration_form"> 
+			<div id="registration_form_head">
+				<p>Register</p>
+			</div>
+			<div id="inside_form">
+				<form class="forms" onsubmit="return addUser()">
+					<p>
+						<label>Name</label></br>
+						<input type="text" id="name" name="" class="input_style">
+					</p>
+					<p>
+						<label>Email</label></br>
+						<input type="Email" id="email" name="" class="input_style">
+					</p>
+					<p>
+						<label>Date of Birth</label></br>
+						<input type="Date" name="" class="input_style" id="dob">
+					</p>
+					<p>
+						<label>Aadhar No</label></br>
+						<input type="number" name="" class="input_style" id="anum">
+					</p>
+					<p>
+						<label>Area</label></br>
+						<input type="text" name="" class="input_style" id="area">
+					</p>
+					<p>
+						<label>Wallet Amount</label></br>
+						<input type="number" name="" class="input_style" id="wall">
+					</p>
+				</form>
+				<a href="#" class="button">Register</a>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		function addUser(){
+    	var name = document.getElementById('name').value;
+    	var email = document.getElementById('email').value;
+    	var dob = document.getElementById('dob').value;
+    	var anum = document.getElementById('anum').value;
+    	var area = document.getElementById('area').value;
+    	var wall = document.getElementById('wall').value;
+    	var entry = document.createElement('li');
+    	entry.appendChild(document.createTextNode(name + ' ' + email + ' ' + dob + ' ' + anum + ' ' + area + ' ' + wall));
+    	list.appendChild(entry);
+    	return false;
+	}
+	</script>
+</body>
+</html>
